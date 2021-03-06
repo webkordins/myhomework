@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+	<style>
+		body {
+			max-width: 800px;
+		}
+
+		legend {
+			color:blue;
+			font-size: 20px;
+			font-weight: 700;
+		}
+		
+		.lbl_width {
+			display: inline-block;
+			width: 350px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Изучение форм</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Различные поля для ввода данных пользователя</h2>
+			<form action="#" method="POST" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;" >
+				<fieldset>
+					<legend>Общая информация</legend>
+
+					<label class="lbl_width" for="fname">Введите ваше имя и фамилию:</label>
+					<input id="fname" type="text" name="first_name" placeholder="Сидор Никифоров"><br><br>
+				
+
+					<label class="lbl_width" for="eml">Введите ваш адрес электронной почты:</label>
+					<input id="eml" type="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+					<label class="lbl_width">Укажите ваш пол:</label>
+					<label for="mal">Мужской</label>
+					<input id="mal" type="radio" name="gender" value="male">
+					<label for="fml">Женский</label>
+					<input id="fml" type="radio" name="gender" value="female"><br><br>
+
+					<label class="lbl_width">Выберите дату вашего рождения:</label>
+					<input type="date" name="birth"><br><br>
+
+					<label class="lbl_width">Ваше семейное положение:</label>
+					<label>
+						<input type="radio" name="mar" checked>Женат/Замужем
+					</label>
+					<label>
+						<input type="radio" name="mar">В разводе
+					</label>
+					<label>
+						<input type="radio" name="mar">Пока еще думаю
+					</label><br><br>
+
+					<label class="lbl_width">Имя вашего домашнего питомца:</label>
+					<input type="text" name="pet" placeholder="Обязательно">
+				</fieldset><br>
+
+				<fieldset>
+					<legend>Ваши предпочтения</legend>
+					<label class="lbl_width">Извините, поле зарезервировано!</label>
+					<input type="text" disabled><br><br>
+
+					<label class="lbl_width">В какую страну хотите поехать в отпуск?</label>
+					<select name="countries[]" multiple size="5">
+						<option value="">--Select countries--</option>
+						<option value="Vietnam">Вьетнам</option>
+						<option value="Portugal">Португалия</option>
+						<option value="Spain">Испания</option>
+						<option value="Czech Republic">Чехия</option>
+						<option value="Brazil">Бразилия</option>
+						<option value="Japan">Япония</option>
+						<option value="Canada">Канада</option>
+						<option value="Norway">Норвегия</option>
+						<option value="Mongolia">Монголия</option>
+						<option value="Ethiopia">Эфиопия</option>
+					</select><br><br>
+
+					<label class="lbl_width">Ссылка на любимый сайт:</label>
+					<input type="url" name="url"><br><br>
+
+					<label class="lbl_width">Какой цвет глаз вы хотите иметь в этом году:</label>
+					<input type="color"><br><br>
+
+					<label class="lbl_width">Любимое время ложиться спать:</label>
+					<input type="time"><br><br>
+				</fieldset><br>
+
+				<fieldset>
+					<legend>Дополнительная информация</legend>
+					<label class="lbl_width">Напишите пожелания разработчикам этой формы</label>
+					<textarea name="comm" cols="20" rows="10" placeholder="Начните отсюда, пожалуйста"></textarea><br><br>
+				</fieldset><br>
+
+				<fieldset>
+					<legend>Кнопки</legend>
+					<input type="submit" name="sub">
+					<input type="reset" name="res">
+					<button name="tiz">Просто нажать</button>
+				</fieldset>
+
+			</form>
+		</section>
+	</main>	
+</body>
+</html>
