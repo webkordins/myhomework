@@ -18,6 +18,17 @@ h1 {
 	
 }
 
+h2 {
+	color: #BB096B;
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #BB096B;
+}
+
 .container {
 	width: 90%;
 	max-width: 1350px;
@@ -88,39 +99,155 @@ nav {
 	font-weight: 500;
 }
 
-.right_side {
-	float: right;
+main {
+	display: flex;
 }
 
+.left_col {
+	max-width: 400px;
+}
+
+
 .post {
+	margin-top: 40px;
 }
 .post_note {
+	margin-top: 8px;
+	font-size: 8px;
+	text-transform: uppercase;
 }
+
+.post_note a {
+	color: #B10962;
+}
+
 .post_text {
+	margin-top: 25px;
+	font-size: 13px;
+	line-height: 25px;
 }
 .post_comment {
 }
 .post_list {
+	margin-top: 20px;
+	list-style-type: none;
 }
 .post_list__item {
+	display: inline;
+	margin-right: 20px;
+	font-size: 13px;
 }
 .post_list__link {
+	color: #B10962;
 }
+
 .tags {
+	margin-top: 20px;
+	background-color: #F2F2F2;
+	padding: 8px 0;
+	
 }
+
+.tags p {
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: .6px;
+}
+
+.tags a {
+	color: #B10962;
+	font-weight: 700;
+}
+
+.in_col {
+	margin-top: 35px;
+	width: 250px;
+}
+
+.in_col aside {
+	background-color: #F2F2F2;
+	padding: 15px;
+	width: 229px;
+}
+
 .recent_item {
+	margin-top: 20px;
+	margin-bottom: 25px;
 }
 .recent_header {
+	display: inline-block;
+	padding: 0 15px;
+	background-color: #B10962;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
 }
 .recent_text {
+	margin-top: 18px;
+	font-size: 12px;
 }
+
+.recent_text::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 200px;
+	background-color: #d9d6d8;
+	margin-top: 20px;
+}
+
+.right_col {
+	margin-top: 35px;
+	margin-left: 40px;
+	width: 250px;
+}
+
+.right_col aside {
+	padding: 15px;
+	width: 229px;
+}
+
 .differ {
 }
 .differ_list {
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
 .differ_item {
+
 }
 .differ_link {
+	font-size: 9px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #B10962;
 }
+
+footer {
+	height: 135px;
+	background-color: #000;
+	padding-top: 30px;
+}
+
 .copy {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
 }
+
+.copy a {
+	display: inline-block;
+	padding: 0 10px;
+	background-color: #B10962;
+	color: #fff;
+	font-size: 10px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+}	
+
+
