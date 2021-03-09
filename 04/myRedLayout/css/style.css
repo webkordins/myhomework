@@ -1,0 +1,126 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	color: #9698AE;
+	background-color: #fff;
+	font-family: 'Noto Sans TC', Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+h1 {
+	color:#fff;
+	font-size: 45px;
+	
+}
+
+.container {
+	width: 90%;
+	max-width: 1350px;
+	margin: 0 auto;
+	border: 2px solid #f00;
+}
+
+.subcontainer {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 880px;
+}
+
+nav {
+	position: relative;
+	background-color: #BE0B6F;
+	height: 44px;
+}
+
+.main_bg {
+	position: relative;
+	height: 260px;
+	background-color: #000;
+}
+
+.head {
+	position: absolute;
+	left: 225px;
+	top: 90px;
+}
+
+.menu {
+	position: absolute;
+	display: flex;
+	justify-content: start;
+	left: 225px;
+	list-style: none;
+}
+.menu_item {
+	display: inline-block;
+	padding: 12px 30px;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-left: 1px solid #000;
+}
+
+.menu_item:hover {
+	background-color: #770444;
+}
+
+.menu_item:last-child {
+	border-right: 1px solid #000;
+}
+
+.menu_link {
+	color: #fff;
+}
+
+.main_bg {
+	background-image: url(../images/flower.jpg);
+	background-repeat: no-repeat;
+	background-position: 540px 0;
+}
+
+.descr a {
+	color: #B10962;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.right_side {
+	float: right;
+}
+
+.post {
+}
+.post_note {
+}
+.post_text {
+}
+.post_comment {
+}
+.post_list {
+}
+.post_list__item {
+}
+.post_list__link {
+}
+.tags {
+}
+.recent_item {
+}
+.recent_header {
+}
+.recent_text {
+}
+.differ {
+}
+.differ_list {
+}
+.differ_item {
+}
+.differ_link {
+}
+.copy {
+}
