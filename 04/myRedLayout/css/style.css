@@ -66,7 +66,7 @@ a {
 }
 
 .promo {
-	background: url('../images/flower.jpg') right top no-repeat;
+	background: url('../images/flower.jpg') right 44px top no-repeat;
 	height: 260px;
 }
 

@@ -69,16 +69,23 @@ nav a {
 	border-right: 1px solid #98bf02;
 }
 
+nav a:hover {
+	background-color: #7d9c03;
+}
+
 .sub_container {
+	margin: 0 auto;
 	background-color: #fff;
-	padding-top: 25px;
-	padding-left: 14px;
+	padding: 25px 14px 0;
+	max-width: 1015px;
+	padding-bottom: 33px;
 }
 
 h2 {
-	font-size: 22px;
-	color: #646A6A;
-	margin-top: 21px;
+	font-size: 21px;
+	color: #5E6B62;
+	margin:18px 0;
+	border-bottom: 1px solid #8eaf0a;
 }
 
 .subheader_list {
@@ -86,3 +93,28 @@ h2 {
 	margin-left: 42px;
 	line-height: 21px;
 }
+
+p {
+	margin:14px 0 0 14px;
+	line-height: 21px;
+}
+
+.footer {
+	margin: 0 auto;
+	max-width: 1015px;
+	background: -moz-linear-gradient(90deg, #8bab0a 0%, #b0e010 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b0e010), color-stop(100%, #8bab0a)); /* safari4+,chrome */
+	background: -webkit-linear-gradient(90deg, #8bab0a 0%, #b0e010 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(90deg, #8bab0a 0%, #b0e010 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, #8bab0a 0%, #b0e010 100%); /* ie10+ */
+	background: linear-gradient(0deg, #8bab0a 0%, #b0e010 100%); /* w3c */
+	text-align: right;
+	padding-right: 18px;
+}
+
+.footer span {
+	color: #fdfff5;
+	line-height: 28px;
+	letter-spacing: 3px;
+}
+
