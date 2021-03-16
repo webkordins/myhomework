@@ -98,11 +98,11 @@ input:checked ~ span {
 }
 
 .low_text::before {
-	content: '(';
+	content: '( ';
 }
 
 .low_text::after {
-	content: ')';
+	content: ' )';
 }
 .smile {
 	margin-top: 40px;
