@@ -1,3 +1,18 @@
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+ }
+ @font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+ }
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,10 +20,11 @@
 }
 
 body {
+	font-family: 'ProximaNova', sans-serif;
+	font-weight: 300;
 	background-color: #fff;
 	color: #9d9d9d;
-	font-size: 14px;
-	font-family: 'Proxima Nova', sans-serif;
+	font-size: 14px;		
 	line-height: 24px;
 }
 
@@ -17,14 +33,14 @@ span {
 }
 
 p {
-	font-weight: 300;
 	line-height: 20px;
 	letter-spacing: 0.4px;
 }
 
 h3 {
-	font-family: 'Proxima Nova';
+	font-family: 'ProximaNova';
 	font-size: 14px;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
 	color: #000000;
@@ -56,7 +72,7 @@ h3 {
 .icon {
 	display: inline-block;
 	width: 63px;
-	height: 61px;
+	height: 63px;
 	border-radius: 50%;
 	border: 1px solid #1275b9;
 	background-color: #1275b9;

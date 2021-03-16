@@ -93,6 +93,7 @@ input:checked ~ span {
 }
 
 .low_text {
+	color: #cdcbcb;
 	font-size: 16px;
 	vertical-align: 4px;
 }
