@@ -55,7 +55,7 @@ nav {
 
 nav ul {
 	list-style-type: none;
-
+	font-size: 0;
 }
 
 nav li {
@@ -63,6 +63,7 @@ nav li {
 }
 
 nav a {
+	font-size: 14px;
 	color: #fdfff5;
 	padding: 6px 17px;
 	line-height: 28px;

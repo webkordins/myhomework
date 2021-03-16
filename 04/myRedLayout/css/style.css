@@ -37,6 +37,7 @@ a {
 
 #main_menu {
 	border-left: 2px solid #7d0546;
+	font-size: 0;
 }
 
 #main_menu li {
