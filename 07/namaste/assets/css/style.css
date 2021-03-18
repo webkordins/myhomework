@@ -28,32 +28,34 @@ span {
 }
 
 .pre_title {
-	font-family: 'Montserrat';
+	font-family: Montserrat;
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 2.5;
-	letter-spacing: 4.8px;
+	letter-spacing: 3.3px;
 	text-transform: uppercase;
 	color: #898f99;
-	margin-bottom: 35px;
+	margin-bottom: 13px;
 }
 
 h2 {
 	font-family: 'Montserrat';
 	font-size: 48px;
-	font-weight: 400;
+	font-weight: 600;
 	color: #0ec8cb;
 	text-transform: uppercase;
-	margin-bottom: 44px;
+	letter-spacing: 4px;
+	margin-bottom: 24px;
 }
 
 .descr {
-	margin: 0 auto;
-	width: 513px;
+	margin: 0 auto 100px;
+	width: 514px;
 	font-family: 'PT Sans';
 	font-size: 18px;
 	line-height: 1.67;
 	color: #999999;
+	letter-spacing: 1.2px;
 	text-transform: uppercase;
 }
 
@@ -63,4 +65,66 @@ h2 {
 	max-width: 940px;	
 }
 
-.list  li {}
+.list {
+	font-size: 0;
+	border: 1px solid #ececec;
+	border-right: none;
+}
+
+.list_item {
+	display: inline-block;
+	width: 25%;
+	background-color: #f7f7f7;
+	padding: 55px 30px 90px;
+	border-right: 1px solid #ececec;
+}
+
+.icon_wrap {
+	text-align: center;
+}
+
+.icon {
+	display: inline-block;
+	width: 70px;
+	height: 66px;
+	background-image: url('../../assets/images/sprite.png');
+	background-repeat: no-repeat;
+}
+
+.list_title {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+
+
+.list_text {
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.58;
+	word-break: break-all;
+}
+
+.icon_anchor {
+	background-position: 3px -180px;
+	margin-bottom: 48px;
+}
+
+.icon_diamond {
+	background-position: -234px -180px;
+	margin-bottom: 23px;
+}
+
+.icon_glasses {
+	background-position: -466px -180px;
+	margin-bottom: 48px;
+}
+
+.icon_monitor {
+	background-position: -702px -180px;
+	margin-bottom: 48px;
+}
+
