@@ -1,0 +1,118 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #e2e7ec;
+	font-family: 'Hans Kendrick', sans-serif;
+	color: #1d1d1d;
+	font-size: 22px;
+}
+
+img {
+	vertical-align: top;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 91px;
+	margin-bottom: 111px;
+	justify-content: space-between;
+	width: 90%;
+	max-width: 1120px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.row2 .main_pic .text_date {
+	position: absolute;
+	left: 43px;
+	bottom: 106px;
+	color:  #818181;
+}
+
+h2 {
+	position: absolute;
+	left:43px;
+	bottom: 34px;
+	width: 433px;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.main_pic {
+	position: relative;
+	background: url('../images/main_bg.jpg') center center/cover no-repeat;
+	width: 740px;
+}
+
+.card_wrap {
+	width: 360px;
+	background-color: #fff;
+}
+
+.image_wrap {
+	margin-bottom: 18px;
+}
+
+.text_date {
+	font-size: 13px;
+	line-height: 2.31;
+	text-align: left;
+	color: #818181;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.text_wrap {
+	padding: 0 27px;
+}
+
+.card_text {
+	font-family: 'Hans Kendrick', sans-serif;
+	color: #1d1d1d;
+	font-size: 22px;
+	text-transform: uppercase;
+	margin-bottom: 66px;
+}
+
+.round {
+	padding-left: 28px;
+	padding-bottom: 26px;
+}
+
+.bottom {
+	position: absolute;
+	bottom: -104px;
+	left: 78px;
+	font-size: 12px;
+	color: #8996a3;
+}
+
+.bottom img {
+	width: 30px;
+	vertical-align: -10px;
+}
+
+.middle {
+	position: relative;
+}
