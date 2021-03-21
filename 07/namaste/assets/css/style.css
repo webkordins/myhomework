@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	transition: all .1s ease ;
 }
 
 body {
@@ -13,10 +14,6 @@ body {
 
 header {
 	text-align: center;
-}
-
-span {
-	transition: all .2s ease ;
 }
 
 .list  {
@@ -79,6 +76,11 @@ h2 {
 	border-right: 1px solid #ececec;
 }
 
+.list_item:hover {
+	background-color: #0ec8cb;
+	color: #fff;
+}
+
 .icon_wrap {
 	text-align: center;
 }
@@ -100,6 +102,17 @@ h2 {
 	margin-bottom: 24px;
 }
 
+.list_title__diamond {
+	display: table;
+	width: 100%;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+.list_title__diamond h3 {
+	display: table-row;
+	margin-bottom: 10px;
+}
 
 .list_text {
 	font-size: 14px;
@@ -111,6 +124,22 @@ h2 {
 .icon_anchor {
 	background-position: 3px -180px;
 	margin-bottom: 48px;
+}
+
+.list_item:hover .icon_anchor {
+	background-position: 3px 0;
+}
+
+.list_item:hover .icon_diamond {
+	background-position: -234px 0;
+}
+
+.list_item:hover .icon_glasses {
+	background-position: -466px 0;
+}
+
+.list_item:hover .icon_monitor {
+	background-position: -702px 0;
 }
 
 .icon_diamond {
