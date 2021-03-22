@@ -1,0 +1,26 @@
+/* playfair-display-regular - latin */
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/playfair-display-regular.woff2') format('woff2'),
+		  url('../fonts/playfair-display-regular.woff') format('woff');
+}
+
+/* lato-300 - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/lato-300.woff2') format('woff2'), 
+		  url('../fonts/lato-300.woff') format('woff');
+		  
+ }
+ /* lato-700 - latin */
+ @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/lato-700.woff2') format('woff2'), 
+		  url('../fonts/lato-700.woff') format('woff'); 
+}
