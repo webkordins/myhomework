@@ -76,7 +76,7 @@ label {
 	justify-content: start;
 	align-items: center;
 	list-style: none;
-	padding-top: 5px;
+	padding-top: 2px;
 
 }
 
@@ -86,87 +86,78 @@ label {
 
 }
 
-button {
+.icon_wrap {
 	outline: none;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
-	transition: all .2s ease;
+	transition: all .1s ease;
+	font-size: 36px;
+	color: #fff;
+	opacity: 0.5;
+}
+
+.icon_wrap:hover {
+	opacity: 1;
 }
 
 .icon {
 	display: inline-block;
 	width: 38px;
 	height: 38px;
-	background-image: url(../images/sprite.png);
-	background-repeat: no-repeat;
 }
 
-.text_color:hover {
-	background-position: 0 -100px;
+.icon-format_align_center:before {
+	content: "\e900";
 }
 
-.text_size {
-	background-position: -127px 0;
+ .icon-format_align_justify:before {
+	content: "\e901";
+}
+ .icon-format_align_left:before {
+	content: "\e902";
+}
+ .icon-format_align_right:before {
+	content: "\e903";
+}
+ .icon-format_bold:before {
+	content: "\e904";
+}
+ .icon-format_color_text:before {
+	content: "\e905";
+}
+ .icon-format_italic:before {
+	content: "\e906";
+}
+ 
+ .icon-format_size:before {
+	content: "\e907";
+}
+ .icon-format_underlined:before {
+	content: "\e908";
 }
 
-.insert_pic {
-	background-position: -256px 0;
+ .icon-insert_photo:before {
+	content: "\e909";
 }
 
-.text_bold {
-	background-position: -446px 0;
-}
+ /* =======подключаю тестово иконочные шрифты======= */
 
-.text_italic {
-	background-position: -586px 0;
-}
-.text_underline {
-	background-position: -717px 0;
-}
-.text_justify {
-	background-position: -826px 0;
-}
-.text_left {
-	background-position: -937px 0;
-}
-.text_center {
-	background-position: -1066px 0;
-}
-.text_right {
-	background-position: -1195px 2px;
-}
+ [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+ 
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+ }
 
-.text_size:hover {
-	background-position: -127px -100px;
-}
-
-.insert_pic:hover {
-	background-position: -256px -100px;
-}
-
-.text_bold:hover {
-	background-position: -446px -100px;
-}
-
-.text_italic:hover {
-	background-position: -586px -100px;
-}
-.text_underline:hover {
-	background-position: -717px -100px;
-}
-.text_justify:hover {
-	background-position: -826px -100px;
-}
-.text_left:hover {
-	background-position: -937px -100px;
-}
-.text_center:hover {
-	background-position: -1066px -100px;
-}
-.text_right:hover {
-	background-position: -1195px -97px;
-}
+ /* =======конец вставленного фрагмента====== */
 
 .container {
 	position: relative;
