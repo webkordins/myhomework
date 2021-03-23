@@ -5,40 +5,85 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Text Editor</title>
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	<div class="page">
+		<header>
+			<div class="title_input">
+				<label for="title">title</label>
+				<input type="text" id="title">
+			</div>
+			<div class="control_bar">
+				<ul class="tool_list">
+					<li>
+						<button class="icon_wrap">
+							<span class="icon text_color" title="text-color"></span>
+						</button>
+					</li>
+					<li>
+						<button class="icon_wrap">
+							<span class="icon text_size" title="text-size"></span>
+						</button>
+					</li>
+					<li>
+						<button class="icon_wrap">
+							<span class="icon insert_pic" title="insert-pic"></span>
+						</button>
+					</li>
+					<li>
+						<button class="icon_wrap">
+							<span class="icon text_bold" title="text-bold"></span>
+						</button>
+					</li>
+					<li>
+						<button class="icon_wrap">
+							<span class="icon text_italic" title="text-italic"></span>
+						</button>
+					</li>
+					<li>
+						<button class="icon_wrap">
+							<span class="icon text_underline" title="text-underline"></span>
+						</button>
+					</li>
+					<li>
+						<button class="icon_wrap">
+							<span class="icon text_justify" title="text-justify"></span>
+						</button>
+					</li>
+					<li>
+						<button class="icon_wrap">
+							<span class="icon text_left" title="text_left"></span>
+						</button>
+					</li>
+					<li>
+						<button class="icon_wrap">
+							<span class="icon text_center" title="text_center"></span>
+						</button>
+					</li>
+					<li>
+						<button class="icon_wrap">
+							<span class="icon text_right" title="text_right"></span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</header>	
+			
 		<div class="container">
-			<header>
-				<div class="title_input">
-					<label for="title">title</label>
-					<input type="text" id="title">
+			<div class="line"></div>
+			<div class="content">
+				<div class="author">Roy Batty, 2019</div>
+				<div class="main_title">Like Tears in Rain</div>
+				<div class="subtitle">
+					Where am I going? How long have I got?
 				</div>
-				<div class="control_bar">
-					<ul class="tool_list">
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-					</ul>
-					<div class="content">
-						<div class="author">Roy Batty, 2019</div>
-						<div class="title">Like Tears in Rain</div>
-						<div class="subtitle">Where am I going? How long have I got?</div>
-						<p>I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhauser gate. All those moments will be lost in time... like tears in rain... <span>Time to die.</span>
-						</p>
-						<p>I don't know why he saved my life. Maybe in those last moments he loved life more than he ever had before. Not just his life - anybody's life; my life. All he'd wanted were the same answers...
-						</p>
-
-					</div>
-				</div>
-			</header>
+				<p>I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhauser gate. All those moments will be lost in time... like tears in rain... <span>Time to die.</span>
+				</p>
+				<p>I don't know why he saved my life. Maybe in those last moments he loved life more than he ever had before. Not just his life - anybody's life; my life. All he'd wanted were the same answers...
+				</p>
+			</div>
 		</div>
 	</div>
 </body>
