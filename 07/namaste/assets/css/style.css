@@ -2,7 +2,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	transition: all .1s ease ;
 }
 
 body {
@@ -69,6 +68,7 @@ h2 {
 }
 
 .list_item {
+	color: #1b1b1b;
 	display: inline-block;
 	width: 25%;
 	background-color: #f7f7f7;
@@ -79,6 +79,7 @@ h2 {
 .list_item:hover {
 	background-color: #0ec8cb;
 	color: #fff;
+	transition: all .2s ease ;
 }
 
 .icon_wrap {
@@ -89,7 +90,7 @@ h2 {
 	display: inline-block;
 	width: 70px;
 	height: 66px;
-	background-image: url('../../assets/images/sprite.png');
+	background-image: url('../images/sprite.png');
 	background-repeat: no-repeat;
 }
 
