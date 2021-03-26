@@ -166,6 +166,6 @@ transform: scale(1.1);
 .qiwi:hover .card_date,
 .peas:hover .card_date, 
 .raspberries:hover .card_date {
-	transform: scale(1) translate(70px, 50px);
+	transform: scale(1) translate(60px, 60px);
 	opacity: 1;
 }
