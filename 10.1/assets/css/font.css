@@ -16,7 +16,7 @@
 
  @font-face {
 	font-family: icomoon;
-	src: url('fonts/icomoon.woff?u2b4nq') format('woff');
+	src: url('../fonts/icomoon.woff?u2b4nq') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
