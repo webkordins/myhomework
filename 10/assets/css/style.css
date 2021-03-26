@@ -163,6 +163,10 @@ transform: scale(1.1);
 	transform: scale(1.05);
 }
 
+.link_wrap {
+	color: #fff;
+}
+
 .qiwi:hover .card_date,
 .peas:hover .card_date, 
 .raspberries:hover .card_date {
