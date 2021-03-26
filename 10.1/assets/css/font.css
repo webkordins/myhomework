@@ -1,0 +1,52 @@
+/* lato-300 - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/lato-v17-latin-300.woff2') format('woff2'), url('../fonts/lato-v17-latin-300.woff') format('woff');
+ }
+ /* lato-700 - latin */
+ @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/lato-v17-latin-700.woff2') format('woff2'),
+		  url('../fonts/lato-v17-latin-700.woff') format('woff');
+ }
+
+ @font-face {
+	font-family: icomoon;
+	src: url('fonts/icomoon.woff?u2b4nq') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
