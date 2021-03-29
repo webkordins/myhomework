@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nike</title>
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="product">
+		<div class="flex-product">
+			<div class="product__logo">
+				<img src="assets/images/logo.png" alt="Logo">
+			</div>
+			<div class="product__image image">
+				<div class="image__item">
+					<img class="image__item--blue" src="assets/images/sneaker.png" alt="Blue-sneaker">
+				</div>
+				<ul class="color__list">
+					<li class="color__list-item color__list-item--blue">
+						<a href="#" class="color__list-link"></a>
+					</li>
+					<li class="color__list-item color__list-item--white">
+						<a href="#" class="color__list-link"></a>
+					</li>
+					<li class="color__list-item color__list-item--red">
+						<a href="#" class="color__list-link"></a>
+					</li>
+					<li class="color__list-item color__list-item--cyan">
+						<a href="#" class="color__list-link"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="product__content product content">
+				<div class="content__title">
+					Nike SB Stefan Janoski Max
+				</div>
+				<div class="content__subtitle">
+					Unisex Skateboarding Shoe
+				</div>
+				<fieldset class="product__rating rating">
+					<legend class="rating__title">Quality</legend>
+					<div class="rating__group">
+						<input class="rating__star" type="radio" name="rating" value="1" aria-label="Плохой" checked>
+						<input class="rating__star" type="radio" name="rating" value="2" aria-label="Сносный">
+						<input class="rating__star" type="radio" name="rating" value="3" aria-label="Нормальный">
+						<input class="rating__star" type="radio" name="rating" value="4" aria-label="Хороший">
+						<input class="rating__star" type="radio" name="rating" value="5" aria-label="Отличный">
+					</div>
+				</fieldset>
+				<div class="product__select">
+					<select name="size" id="size" class="product__size">
+						<option value="38">38</option>
+						<option value="39">39</option>
+						<option value="40">40</option>
+						<option value="41">41</option>
+						<option value="42">42</option>
+						<option value="43">43</option>
+					</select>
+					<select name="qty" id="qty" class="product__qty">
+						<option value="low">Low</option>
+						<option value="medium">Medium</option>
+						<option value="high">High</option>
+						<option value="top">Top</option>
+					</select>
+				</div>
+				<button class="btn btn-wide">
+					Add to cart
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
