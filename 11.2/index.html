@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nike</title>
 	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
+	<link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -14,7 +16,7 @@
 			<div class="product__logo">
 				<img src="assets/images/logo.png" alt="Logo">
 			</div>
-			<div class="product__image image">
+			<div class="product__image">
 				<div class="image__item">
 					<img class="image__item--blue" src="assets/images/sneaker.png" alt="Blue-sneaker">
 				</div>
@@ -52,6 +54,7 @@
 				</fieldset>
 				<div class="product__select">
 					<select name="size" id="size" class="product__size">
+						<option value="" disabled selected>Size</option>
 						<option value="38">38</option>
 						<option value="39">39</option>
 						<option value="40">40</option>
@@ -60,6 +63,7 @@
 						<option value="43">43</option>
 					</select>
 					<select name="qty" id="qty" class="product__qty">
+						<option value="" disabled selected>Qty</option>
 						<option value="low">Low</option>
 						<option value="medium">Medium</option>
 						<option value="high">High</option>
@@ -72,6 +76,9 @@
 			</div>
 		</div>
 	</div>
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/plugins/styler/jquery.formstyler.min.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
 

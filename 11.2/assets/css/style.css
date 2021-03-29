@@ -43,16 +43,11 @@ ul {
 	left: 22px;
 }
 
-.product__image {
-}
-.image {
-}
 .image__item {
 	margin-top: 50px;
 	margin-bottom: 67px;
 }
-.image__item--blue {
-}
+
 .color__list {
 	padding-left: 9px;
 	margin-left: 133px;
@@ -101,8 +96,7 @@ ul {
 	justify-content: flex-start;
 	padding-left: 79px;
 }
-.content {
-}
+
 .content__title {
 	font-size: 24px;
 	font-weight: 100;
@@ -117,15 +111,13 @@ ul {
 	line-height: 1.86;
 	letter-spacing: 0.28px;
 	color: #e1e1e18a;
-	margin-left: -12px;
+	margin-left: -17px;
 	margin-bottom: 18px;
 }
 .product__rating {
-	margin: 0;
-	padding: 0;
-	border: none;
-	margin-left: -120px;
-	margin-bottom: 26px;
+    border: none;
+    margin-left: -127px;
+    margin-bottom: 26px;
 }
 
 .rating__title {
@@ -195,14 +187,25 @@ ul {
 }
 
 .product__select {
-	margin-right: 65px;
-	margin-bottom: 42px;
+	display: flex;
+	justify-content: start;
+	margin-right: 45px;
+	margin-bottom: 29px;
 }
 
-.product__size {
+.jq-selectbox__select {
+	height: 32px;
+	padding: 0 21px 0 10px;
+	border: 1px solid #CCC;
+	border-bottom-color: #B3B3B3;
+	border-radius: 4px;
+	background-color: #0E1E32;
+	box-shadow: inset 1px -1px #f1f1f1, inset -1px 0 #f1f1f1, 0 1px 2px rgb(0 0 0 / 10%);
+	font: 14px/32px Arial, sans-serif;
+	color: #333;
+	text-shadow: 1px 1px #fff;
 }
-.product__qty {
-}
+
 .btn {
 	font-family: Museo;
 	height: 40px;
@@ -211,6 +214,7 @@ ul {
 	font-weight: 100;
 	line-height: 1.29;
 	letter-spacing: 0.28px;
+	cursor: pointer;
 }
 .btn-wide {
 	width: 184px;	
