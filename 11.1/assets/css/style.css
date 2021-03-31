@@ -94,6 +94,7 @@ img {
 	font-size: 17px;
 	font-weight: 300;
 	line-height: 1.59;
+	text-align: center;
 }
 
 .first-screen__descr {
@@ -114,19 +115,25 @@ img {
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
+	font-family: Raleway;
+	font-weight: 300;
 	color: #ffffff;
 	border: none;
+	outline: none;
 	cursor: pointer;
 	transition: all .3s ease;
 }
 
-.btn:hover {
-	background-color: #d44e28;
+.btn:hover {	
 	transform: scale(1.1);
 }
 
 .btn-orange {
 	background-color: #ff6033;
+}
+
+.btn-orange:hover {
+	background-color: #d44e28;
 }
 
 .scroll {
@@ -179,8 +186,8 @@ img {
 
 .about__text {
 	margin-left: 73px;
-    margin-right: -2px;
-    padding-top: 127px;
+	margin-right: -2px;
+	padding-top: 127px;
 }
 
 .about__text--paragraph {
@@ -209,7 +216,7 @@ img {
 	color: #fff;
 }
 
-.blog__descr  {
+.blog__descr {
 	margin-bottom: 44px;
 	color: #fff;
 }
@@ -241,7 +248,7 @@ img {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: linear-gradient(to top, rgba(0,0,0,.9), rgba(255,255,255,0));
+	background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(255, 255, 255, 0));
 }
 
 .card__date {
@@ -303,7 +310,7 @@ img {
 
 .link a {
 	display: inline-block;
-	box-shadow: 0px 2px 5px 0 #00000080;	
+	box-shadow: 0px 2px 5px 0 #00000080;
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: 300;
@@ -322,8 +329,8 @@ img {
 }
 
 .link a:hover {
-background-color: #cc1120;
-transform: scale(1.1);
+	background-color: #cc1120;
+	transform: scale(1.1);
 }
 
 .card:hover {
@@ -333,4 +340,108 @@ transform: scale(1.1);
 .card:hover .card__date {
 	transform: scale(1) translate(60px, 60px);
 	opacity: 1;
+}
+
+/* =====Секция контактов===== */
+
+.contact {
+	background: url('../images/imagesContact/bottom-bg.jpg') center / cover no-repeat;
+}
+
+.contact__header {
+	padding-top: 100px;
+	padding-bottom: 48px;
+}
+
+.contact__title {
+	text-align: center;
+}
+
+.contact__descr {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.contact__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.contact__form {
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.form-item {
+	width: 100%;
+	max-width: 500px;
+	background-color: rgba(0, 196, 196, .5);
+	border: none;
+	outline: none;
+	border-left: 5px solid transparent;
+	font-family: Raleway;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 25px;
+	color: #fff;
+	padding-left: 20px;
+	transition: all .2s ease;
+}
+
+.form-item::placeholder {
+	font-weight: 300;
+	color: #fff;
+}
+
+.form-item.low {
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+.form-item.message {
+	resize: none;
+	height: 250px;
+}
+
+.form-item:hover {
+	border-color: #355b82;
+	background-color: rgb(0, 196, 196);
+}
+
+.address {
+	display: flex;
+	width: 50%;
+	justify-content: start;
+}
+
+.list-item__title {
+	font-size: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.list-item__content {
+	margin-bottom: 20px;
+}
+
+.list-item__link {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.25;
+	color: #262626;
+}
+
+.btn-blue {
+	width: 230px;
+	background-color: rgba(49, 140, 231, 0.5);
+	padding: 0 20px;
+	font-weight: 300;
+}
+
+.btn-blue:hover {
+	background-color: rgba(32, 119, 206, 0.5);
 }
