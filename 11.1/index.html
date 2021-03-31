@@ -14,10 +14,10 @@
 	<!-- =====Блок фиксированной шапки===== -->
 	<header class="first-screen__header header">
 		<div class="container__header">
-			<div class="header__logo">
-				<img src="assets/images/logo.png" alt="Logo">
+			<div class="logo logo-dark">
+				<a href="#"><img class="logo__img--dark" src="assets/images/logo.png" alt="Logo"></a>
 			</div>
-			<nav class="header__menu menu">
+			<nav class="menu">
 				<ul class="menu__list">
 					<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">About</a></li>
@@ -175,40 +175,53 @@
 
 			<!-- =====Секция контактов===== -->
 
-			<section class="contact">
-				<div class="contact__header">
-					<h2 class="contact__title title">
-						Contact
-					</h2>
-					<div class="contact__descr descr">
-						For new projects, ideas, business or anything
-						you'd like to discuss, contact with me!
+		<section class="contact">
+			<div class="contact__header">
+				<h2 class="contact__title title">
+					Contact
+				</h2>
+				<div class="contact__descr descr">
+					For new projects, ideas, business or anything
+					you'd like to discuss, contact with me!
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="contact__wrapper">
+					<form class="contact__form" action="#" method="POST">
+						<input class="form-item low" type="text" placeholder="Your name..." autofocus>
+						<input class="form-item low" type="email" placeholder="Your email..." required>
+						<input class="form-item low" type="phone" placeholder="Your phone number...">
+						<textarea class="form-item message" name="message" cols="30" rows="10" placeholder="Your message..."></textarea>
+					</form>
+					<div class="address">
+						<dl class="address__list">
+							<dt class="list-item__title">ADDRESS</dt>
+							<dd class="list-item__content"><a class="list-item__link" target="_blank" href="https://www.google.com/maps/">123 City name, Street, City, Country</a></dd>
+							<dt class="list-item__title">EMAIL</dt>
+							<dd class="list-item__content"><a class="list-item__link" target="_blank" href="mailto:cahee@domain.com">cahee@domain.com</a></dd>
+							<dt class="list-item__title">PHONE</dt>
+							<dd class="list-item__content"><a class="list-item__link" target="_blank" href="tel:+0123456789">+012 345 6789</a></dd>
+						</dl>
 					</div>
 				</div>
 
-				<div class="container">
-					<div class="contact__wrapper">
-						<form class="contact__form" action="#" method="POST">
-							<input class="form-item low" type="text" placeholder="Your name..." autofocus>
-							<input class="form-item low" type="email" placeholder="Your email..." required>
-							<input class="form-item low" type="phone" placeholder="Your phone number...">
-							<textarea class="form-item message" name="message" cols="30" rows="10" placeholder="Your message..."></textarea>
-						</form>
-						<div class="address">
-							<dl class="address__list">
-								<dt class="list-item__title">ADDRESS</dt>
-								<dd class="list-item__content"><a class="list-item__link" target="_blank" href="https://www.google.com/maps/">123 City name, Street, City, Country</a></dd>
-								<dt class="list-item__title">EMAIL</dt>
-								<dd class="list-item__content"><a class="list-item__link" target="_blank" href="mailto:cahee@domain.com">cahee@domain.com</a></dd>
-								<dt class="list-item__title">PHONE</dt>
-								<dd class="list-item__content"><a class="list-item__link" target="_blank" href="tel:+0123456789">+012 345 6789</a></dd>
-							</dl>
-						</div>
-					</div>
+				<button class="btn btn-blue" type="submit">Contact with us</button>
+			</div>
+		</section>
 
-					<button class="btn btn-blue" type="submit">Contact with us</button>
+			<!-- =====Подвал===== -->
+
+		<footer class="footer">
+			<div class="container container__footer">
+				<span class="copyright">&copy; 2015 Company. All right reserved.</span>
+				<div class="logo logo-white">
+					<a href=""><img class="logo__img--white" src="assets/images/imagesContact/logo-white.png" alt="Logo"></a>
 				</div>
-			</section>
+				<span class="author">Made with <span class="red">love</span> by Auskteez</span>
+			</div>
+		</footer>
+
 </body>
 
 </html>

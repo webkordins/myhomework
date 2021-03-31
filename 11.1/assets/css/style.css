@@ -346,15 +346,16 @@ img {
 
 .contact {
 	background: url('../images/imagesContact/bottom-bg.jpg') center / cover no-repeat;
+	padding: 80px 0 49px;
 }
 
 .contact__header {
-	padding-top: 100px;
-	padding-bottom: 48px;
+	margin-bottom: 40px;;
 }
 
 .contact__title {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .contact__descr {
@@ -387,7 +388,7 @@ img {
 	font-weight: 700;
 	line-height: 25px;
 	color: #fff;
-	padding-left: 20px;
+	padding-left: 16px;
 	transition: all .2s ease;
 }
 
@@ -404,6 +405,7 @@ img {
 .form-item.message {
 	resize: none;
 	height: 250px;
+	padding-top: 13px;
 }
 
 .form-item:hover {
@@ -415,17 +417,19 @@ img {
 	display: flex;
 	width: 50%;
 	justify-content: start;
+	padding-left: 86px;
 }
 
 .list-item__title {
 	font-size: 17px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	margin-bottom: 2px;
+	margin-top: -4px;
 }
 
 .list-item__content {
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 }
 
 .list-item__link {
@@ -444,4 +448,36 @@ img {
 
 .btn-blue:hover {
 	background-color: rgba(32, 119, 206, 0.5);
+}
+
+		/* =====Подвал===== */
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #262626;
+	height: 90px;
+}
+
+.container__footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyright,
+.author {
+	color: #b9b9b9;
+	font-size: 16px;
+}
+
+.logo-white {
+	text-align: center;
+
+}
+
+.red {
+	color: #ff2b58;
+	font-weight: 700;
 }
