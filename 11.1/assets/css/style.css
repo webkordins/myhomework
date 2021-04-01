@@ -124,7 +124,7 @@ img {
 	transition: all .3s ease;
 }
 
-.btn:hover {	
+.btn:hover {
 	transform: scale(1.1);
 }
 
@@ -199,6 +199,49 @@ img {
 }
 
 /* =====Конец секции About Us===== */
+
+/* =====Секция Our services===== */
+
+.services {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 179px 0 151px;
+	background-color: #70bfff;
+}
+
+.container.services-image {
+	width: 100%;
+	background: url(../images/imagesOurServices/tomato-pic.png) top right no-repeat;
+}
+
+.services-wrap {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+
+}
+
+.services-list__item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
 
 .blog {
 	padding: 100px 0 120px;
@@ -350,7 +393,8 @@ img {
 }
 
 .contact__header {
-	margin-bottom: 40px;;
+	margin-bottom: 40px;
+	;
 }
 
 .contact__title {
@@ -383,7 +427,7 @@ img {
 	border: none;
 	outline: none;
 	border-left: 5px solid transparent;
-	font-family: Raleway;
+	font-family: Raleway,sans-serif;
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 25px;
@@ -393,6 +437,7 @@ img {
 }
 
 .form-item::placeholder {
+	font-family: Raleway,sans-serif;
 	font-weight: 300;
 	color: #fff;
 }
@@ -406,6 +451,7 @@ img {
 	resize: none;
 	height: 250px;
 	padding-top: 13px;
+	margin-bottom: 15px;
 }
 
 .form-item:hover {
@@ -450,7 +496,7 @@ img {
 	background-color: rgba(32, 119, 206, 0.5);
 }
 
-		/* =====Подвал===== */
+/* =====Подвал===== */
 
 .footer {
 	display: flex;

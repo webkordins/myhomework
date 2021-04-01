@@ -18,12 +18,13 @@
 
 			<form class="form__input" action="#" method="POST">
 				<label for="name" class="lbl">Username</label>
-				<input type="text" id="name" class="form__input-item">
+				<input type="text" id="name" name="name" class="form__input-item">
 				<label for="password" class="lbl">Password</label>
-				<input type="password" id="password" class="form__input-item">
+				<input type="password" id="password" name="pass" class="form__input-item">
 				<div class="mychk-box">
-					<input type="checkbox" id="box" class="checkbox"  checked>
-					<label for="box" class="lbl-text">Keep me signed in</label>
+					<span class="false"></span>
+					<input type="checkbox" id="box" name="chk" class="checkbox"  checked>
+					<label for="box" class="lbl-text">Keep me signed in</label>				
 				</div>
 				<button class="btn" type="submit">Sign in</button>
 				<div class="restore">

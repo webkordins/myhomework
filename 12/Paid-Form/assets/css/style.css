@@ -96,6 +96,36 @@ a {
 	top: 3px;
 	width: 16px;
 	height: 16px;
+	z-index: 1;
+	appearance: none;
+	border: none;
+	outline: none;
+}
+
+.false {
+	display: inline-block;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 3px;
+	background-color: #23ae92;
+}
+
+.lbl-text::before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 4px;
+	top: 6px;
+	left: 2px;
+	border-bottom: 3px solid transparent;
+	border-left: 3px solid transparent;
+	transform: rotate(-45deg);
+}
+
+.checkbox:checked ~ .lbl-text::before {
+	border-color: #fff;
 }
 
 .lbl-text {
