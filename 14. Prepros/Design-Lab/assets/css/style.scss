@@ -1,0 +1,49 @@
+@import 'reset';
+
+body {
+	font-size: 16px;
+	color: #3c3c3c;
+	font-family: Lato, sans-serif;
+}
+
+.container {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.first-screen {
+	padding: 285px 0 115px;
+	background: url(../img/hero-bg.jpg) top right/100% auto no-repeat;
+	&__logo {
+		text-align: center;
+		margin-bottom: 80px;
+	}	
+	&__title {
+		text-align: center;
+		font-size: 54px;
+		font-weight: 700;
+		letter-spacing: 9px;
+		color: #fff;
+		text-transform: uppercase;
+		margin-bottom: 34px;
+	}
+	&__descr {
+		max-width: 580px;
+		font-size: 15px;
+		line-height: 1.93;
+		letter-spacing: 0.9px;
+		margin: 0 auto 238px;
+		text-align: center;
+		font-weight: 400;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	&__scroll {
+		text-align: center;
+		fill: #fff;
+		.mouse {
+			padding-left: 278px;
+		}
+	}
+}
