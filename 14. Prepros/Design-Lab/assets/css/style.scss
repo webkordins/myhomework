@@ -6,18 +6,44 @@ body {
 	font-family: Lato, sans-serif;
 }
 
+.main-content {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
 .container {
 	width: 90%;
 	max-width: 900px;
 	margin: 0 auto;
 }
 
+.title {
+	position: relative;
+	font-size: 34px;
+	font-weight: 700;
+	letter-spacing: 5.44px;
+	color: #3c3c3c;
+	text-transform: uppercase;
+	margin-bottom: 65px;
+}
+
+.content {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #3c3c3c;
+}
+
 .first-screen {
-	padding: 285px 0 115px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15% 0 107px;
 	background: url(../img/hero-bg.jpg) top right/100% auto no-repeat;
 	&__logo {
 		text-align: center;
-		margin-bottom: 80px;
+		margin-bottom: 4.2%;
 	}	
 	&__title {
 		text-align: center;
@@ -26,24 +52,216 @@ body {
 		letter-spacing: 9px;
 		color: #fff;
 		text-transform: uppercase;
-		margin-bottom: 34px;
+		margin-bottom: 2%;
 	}
 	&__descr {
+		width: 32%;
 		max-width: 580px;
 		font-size: 15px;
 		line-height: 1.93;
 		letter-spacing: 0.9px;
-		margin: 0 auto 238px;
+		margin: 0px auto 12.2%;
 		text-align: center;
 		font-weight: 400;
 		color: #fff;
 		text-transform: uppercase;
 	}
 	&__scroll {
+		position: relative;
+		margin: 0 auto;
+		width: 23px;
+		height: 37px;
+		border: 2px solid #fff;
+		border-radius: 10px;
+	}
+	&__scroll::before {
+		content: "";
+		position: absolute;
+		left: 7px;
+		top: 5px;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background-color: #fff;
+	}
+}
+
+/* =====Секция About us=====*/
+
+.container-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.decor {
+	width: 100%;
+	border: 2px solid #000;
+	border-top: none;
+}
+
+.about {
+	&__decor {
+		margin: 160px 0;
+	}
+	&__title {
+		position: relative;
+		top: -24px;
+	}
+}
+
+.inner {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 554px;
+}
+
+.about__inner {
+	padding: 0 0 53px;
+}
+
+
+
+.about__content--top {
+	margin-bottom: 34px;
+}
+
+	/*=====Секция Services=====*/
+
+.services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url('../img/services.jpg') top right/100% auto no-repeat;
+	&__title {
+		color: #ffffff;
+		top: -24px
+	}
+	&__text {
+		color: #fff;
+	}
+	&__decor {
+		margin: 130px 0 110px;
+		border-color: #fff;
+	}
+}
+
+	/*=====Секция What we do=====*/
+
+.skills {
+	width: 100%;
+	&__subtitle {
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 3.2px;
+		color: #3c3c3c;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	&__text {
+		margin-bottom: 30px;
+	}
+	&__decor {
+		margin: 120px 0 114px;
+	}
+	&__title {
+		top: -24px;
+	}
+}
+
+.skills__title {
+	margin-bottom: 125px;
+}
+
+.list__item {
+	.pen, .code, .list {
+		padding-left: 214px;
+	}
+	
+}
+
+	/*=====Секция Topics=====*/
+
+.topics__pic-wrapper {
+	width: 100%;
+	max-width: 1920px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	.pic-big {
+		width: 41.667%;
+	}
+}
+
+.topics__pic {
+	position: relative;
+	width: 28.646%;
+	margin-bottom: 10px;
+}
+
+.pic__item {
+	width:100%;
+	height: auto;
+}
+
+.pic__item--big {
+	width: 100%;
+	height: auto;
+}
+
+.topics__title {
+	position: absolute;
+	left: 48px;
+	bottom: 42px;
+	font-size: 34px;
+	font-weight: 700;
+	letter-spacing: 5.44px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.contact {
+	&__link {
+		display: inline-block;
+		width: 300px;
+		height: 58px;
+		background-color:#3c3c3c;
+		font-size: 16px;
+		letter-spacing: 2.56px;
 		text-align: center;
-		fill: #fff;
-		.mouse {
-			padding-left: 278px;
-		}
+		color: #fff;
+		text-transform: uppercase;
+		line-height: 58px;
+		margin-bottom: 40px;
+	}
+	&__text {
+		margin-bottom: 20px;
+	}
+	&__decor {
+		margin: 138px 0 0;
+	}
+	&__title {
+		font-size: 30px;
+		top: -24px;
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 165px;
+}
+
+.copy {
+	&__link {
+		text-decoration: none;
+		font-weight: 700;
+		color: #3c3c3c;
+	}
+	&__logo-link {
+		margin-right: 20px;
 	}
 }
