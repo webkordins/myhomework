@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -280,6 +281,40 @@ body {
   width: 25%;
   height: 50px;
   padding-left: 23px;
+}
+
+/*====Секция Gallery=====*/
+.gallery {
+  padding: 100px 0 120px;
+  background-color: #ffe92f;
+}
+.gallery__header {
+  margin: 0 auto;
+  max-width: 565px;
+}
+.gallery__title {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.gallery__descr {
+  margin-bottom: 46px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.59;
+  text-align: center;
+}
+.gallery__wrapper--top {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery__item--big {
+  width: calc(65.81% - 15px);
+}
+.gallery__item--small {
+  width: calc(31.62% - 15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*====Секция Блог=====*/

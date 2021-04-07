@@ -267,6 +267,42 @@ body {
 	height: 50px;
 	padding-left: 23px;
 }
+
+	/*====Секция Gallery=====*/
+
+.gallery {
+	padding: 100px 0 120px;
+	background-color: #ffe92f;
+	&__header {
+		margin: 0 auto;
+		max-width: 565px;
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 28px;
+	}
+	&__descr {
+		margin-bottom: 46px;
+		font-size: 17px;
+		font-weight: 300;
+		line-height: 1.59;
+		text-align: center;
+	}
+	&__wrapper--top  {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item--big {
+		width: calc(65.81% - 15px);
+	}
+	&__item--small {
+		width: calc(31.62% - 15px);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}	
+}
+
 	/*====Секция Блог=====*/		
 
 .blog {
