@@ -7,6 +7,10 @@ body {
 	background-color: #F9F8FD;
 }
 
+.main-page {
+	padding-top: 150px;
+}
+
 .title {
 	font-size: 90px;
 	font-weight: 700;
@@ -47,23 +51,26 @@ body {
 
 .header-flex {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .header {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	position: fixed;
 	width: 100%;
 	height: 150px;
 	background-color: rgba(249, 248, 251, 0.48);
-	z-index: 1;
+	z-index: 2;
 }
 
 .menu {
 	&__list {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	&__item {
@@ -86,7 +93,7 @@ body {
 
 .first-screen {
 	background-color: #F9F8FD;
-	background: url(../images/main-bg.jpg)right 202px bottom / auto 100% no-repeat;
+	background: url(../images/main-bg.jpg) 208px -150px / auto no-repeat;
 	padding-bottom: 69px;
 	&__title {
 		font-size: 60px;
@@ -94,9 +101,9 @@ body {
 		margin-bottom: 13px;
 	}
 	&__inner {
-		width: 370px;
+		width: 31.62%;
 		margin-bottom: 295px;
-		padding-top: 350px;
+		padding-top: 200px;
 	}
 	&__descr {
 		margin-bottom: 27px;
@@ -144,12 +151,13 @@ body {
 		margin-bottom: 7px;
 	}
 	&__item-img {
+		width: 50%;
 		margin-left: -52px;
 		padding-bottom: 22px;
 	}
 	&__text {
-		margin-left: 73px;
-		margin-right: -2px;
+		width: 50%;
+		margin-left: 135px;
 		padding-top: 127px;
 	}
 	&__text--paragraph {
@@ -168,16 +176,18 @@ body {
 	&__title {
 		color: #fff;
 		padding-bottom: 29px;
+		padding-left: 40px;
 	}
 }
 
 .services-image {
-	width: 100%;
-	background: url(../images/imagesOurServices/tomato-pic.png) top right 100px no-repeat;
+	// width: 100%;
+	background: url(../images/imagesOurServices/tomato-pic.png) top right no-repeat;
 }
 
 .services-wrap {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -186,11 +196,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	width: 400px;
+	width: 34.19%;
+	margin-left: 100px;
 }
 
 .flex-title {
-	width: 63%;
+	width: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -239,7 +250,7 @@ body {
 			content: '';
 			position: absolute;
 			top: -2px;
-			left: 298px;
+			left: 75%;
 			width: 1px;
 			height: 100px;
 			background-color: #9d9d9d;
@@ -271,15 +282,19 @@ body {
 	/*====Секция Gallery=====*/
 
 .gallery {
-	padding: 100px 0 120px;
+	padding: 80px 0 120px;
 	background-color: #ffe92f;
+	&__wrapper {
+		text-align: center;
+	}
 	&__header {
 		margin: 0 auto;
-		max-width: 565px;
+		width: 49.57%;
+		max-width: 580px;
 	}
 	&__title {
 		text-align: center;
-		margin-bottom: 28px;
+		margin-bottom: 20px;
 	}
 	&__descr {
 		margin-bottom: 46px;
@@ -290,23 +305,107 @@ body {
 	}
 	&__wrapper--top  {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+		margin-bottom: 30px;
 	}
 	&__item--big {
-		width: calc(65.81% - 15px);
+		width: 65.8%;
+		box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, .8)
 	}
 	&__item--small {
-		width: calc(31.62% - 15px);
+		width: 31.62%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		align-items: center;
+	}
+	&__wrapper--bottom {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 50px;
 	}	
+}
+
+.small__item,
+.middle__item {
+	box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, .8)
+}
+
+.img-small,
+.img-middle,
+.img-big {
+	width: 100%;
+}
+
+.btn-gallery {
+	background-color: #5585a2;
+}
+
+	/*====Секция Subscribe=====*/
+
+.subscribe {
+	padding: 145px 0 163px;
+	background: #fff url(../images/imagesSubscribe/bg.jpg) top no-repeat;
+	&__title {
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 0.68;
+		text-align: left;
+		color: #262626;
+		margin-bottom: 28px;
+	}
+	&__inner {
+		width: 65.8%;
+	}
+	&__descr {
+		max-width: 545px;
+		font-size: 17px;
+		font-weight: 300;
+		line-height: 1.59;
+		text-align: left;
+		color: #262626;
+		margin-bottom: 27px;
+	}
+	&__form  {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 100%;
+	}
+}
+
+.form__mail {
+	width: 570px;
+	height: 55px;
+	outline: none;
+	border: solid 1px #262626;
+	font-family: Raleway, sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 25px;
+	padding-left: 15px;
+	&::placeholder {
+	font-family: Raleway, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.8;
+	text-align: left;
+	color: rgba(38, 38, 38, 0.8);
+	}
+}
+
+.btn-subscr {
+	margin-left: 32px;
+	max-width: 170px;
+	background-color: #96b92c;
 }
 
 	/*====Секция Блог=====*/		
 
 .blog {
-	padding: 100px 0 120px;
+	padding: 80px 0 120px;
 	background-color: #b07cf7;
 	&__header {
 		margin: 0 auto;
@@ -314,11 +413,11 @@ body {
 	}
 	&__title {
 		text-align: center;
-		margin-bottom: 23px;
+		margin-bottom: 20px;
 		color: #fff;
 	}
 	&__descr {
-		margin-bottom: 44px;
+		margin-bottom: 40px;
 		color: #fff;
 	}
 }
@@ -445,7 +544,6 @@ body {
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 15px;
 	}
 	&__form {
 		display: flex;
