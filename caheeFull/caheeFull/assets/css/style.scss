@@ -206,6 +206,7 @@ body {
 	&__title {
 		color: #fff;
 		margin-bottom: 7px;
+		margin-top: 50px;
 	}
 	&__item-img {
 		width: 100%;
@@ -282,6 +283,7 @@ body {
 	margin-bottom: 20px;
 	background-color: #fff;
 	box-shadow: 0px 4px 10px 0 #00000080;
+	box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.5), -1px -1px 4px 1px rgba(0,0,0,0.5);
 	border: 2px solid transparent;
 	transition: all .2s ease;
 	&:hover {
@@ -622,6 +624,7 @@ body {
 		width: 50%;
 		flex-direction: column;
 		justify-content: start;
+		align-items: center;
 	}
 }
 
@@ -654,7 +657,7 @@ body {
 		padding-top: 13px;
 		margin-bottom: 15px;
 	}
-	&:hover {
+	&:focus {
 		border-color: #355b82;
 		background-color: rgb(0, 196, 196);
 	}
@@ -743,8 +746,9 @@ body {
 
 @media screen and (max-width: 1208px) {
 	.about {
-		background-image: none;
-		padding: 50px 0;
+		background-position: center bottom;
+		background-size: 100px;
+		padding: 0 0 50px;
 	}
 	.about__title {
 		text-align: center;
@@ -753,6 +757,9 @@ body {
 		width: 100%;
 		padding-left: 0;
 		padding-right: 0;
+	}
+	.about__text {
+		padding-bottom: 40px;
 	}
 	.about__pic {
 		width: 100%;
@@ -783,7 +790,8 @@ body {
 
 @media screen and (max-width: 1112px) {
 	.flex-title {
-		background-image: none;
+		background-position: center center;
+		background-size: contain;
 	}
 	.services-wrap {
 		justify-content: center;
@@ -816,7 +824,8 @@ body {
 @media screen and (max-width: 900px) {
 	.contact__wrapper {
 		flex-direction: column-reverse;
-		align-items: center;
+		max-width: 500px;
+		margin: 0 auto
 	}
 	.address {
 		padding: 0;
@@ -879,7 +888,6 @@ body {
 
 @media screen and (max-width: 664px) {
 	.first-screen {
-		background-image: none;
 		&__inner {
 			width: 100%;
 		}
@@ -949,7 +957,7 @@ body {
 		display: none;
 	}
 	.contact {
-		padding: 50px 0 0;
+		padding: 50px 0 50px;
 	}
 }
 
@@ -989,6 +997,7 @@ body {
 	}
 	.about__wrap {
 		width: 100%;
+		padding-top: 50px;
 	}
 	.first-screen__scroll {
 		bottom: 150px;
