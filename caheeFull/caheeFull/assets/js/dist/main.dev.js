@@ -9,4 +9,10 @@ $(function () {
       $("header").removeClass("fixed");
     }
   });
+  $(function () {
+    $('.hamburger, #menu_shadow').click(function () {
+      $(".hamburger").toggleClass("is-active");
+      $("body").toggleClass("open");
+    });
+  });
 });

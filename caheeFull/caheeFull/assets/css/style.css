@@ -101,37 +101,65 @@ body {
   backdrop-filter: blur(3px);
 }
 
-.hamburger__btn {
-  display: none;
-}
-.hamburger__btn a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-}
-.hamburger__btn a span {
-  position: relative;
-  display: inline-block;
+#mobile_menu_block {
+  position: fixed;
+  top: 0;
+  left: -100%;
   width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #000;
+  height: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  z-index: 10001;
 }
-.hamburger__btn a span::before, .hamburger__btn a span::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #000;
+
+.open #menu_shadow {
+  display: block;
+}
+
+.open #mobile_menu_block {
   left: 0;
 }
-.hamburger__btn a span::before {
-  top: 10px;
+
+#menu_shadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  backdrop-filter: blur(3px);
+  z-index: 10000;
 }
-.hamburger__btn a span::after {
-  top: 20px;
+
+.mobile_menu li {
+  border-bottom: 1px solid darkblue;
+}
+.mobile_menu li a {
+  display: inline-block;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #232323;
+  width: 100%;
+}
+.mobile_menu li a:hover {
+  background-color: darkblue;
+  color: #fff;
+}
+
+.mmb_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #efefef;
+}
+
+.hamburger {
+  display: none;
 }
 
 .menu__list {
@@ -884,7 +912,7 @@ body {
   }
 }
 @media screen and (max-width: 745px) {
-  .hamburger__btn {
+  .hamburger {
     display: block;
   }
 

@@ -7,10 +7,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Full cahee</title>
 	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/hamburger.min.css">
 	<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
 <body>
+	<!-- =====Мобильное меню===== -->
+	<div id="mobile_menu_block">
+		<div class="mmb_top">
+			<div class="mmb_logo">
+				<img src="assets\images\logo.png" alt="" class="top__logo">
+			</div>
+			<button class="hamburger hamburger--spin is-active" type="button">
+				<span class="hamburger-box">
+				  <span class="hamburger-inner"></span>
+				</span>
+			 </button>
+		</div>
+		<nav class="mobile_menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="menu_shadow"></div>
 	<!-- =====Блок фиксированной шапки===== -->
 	
 		<header class="header">
@@ -29,11 +54,11 @@
 							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
 						</ul>
 					</nav>
-					<div class="hamburger__btn">
-						<a href="#">
-							<span></span>
-						</a>
-					</div>
+					<button class="hamburger hamburger--spin is-active" type="button">
+						<span class="hamburger-box">
+						  <span class="hamburger-inner"></span>
+						</span>
+					 </button>
 				</div>
 			</div>
 		</header>
