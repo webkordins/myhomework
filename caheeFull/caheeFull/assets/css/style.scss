@@ -132,7 +132,7 @@ body {
 		}
 	}
 }
-
+	// =====Верхняя часть мобильного меню, с логотипом и гамбургером=====
 .mmb_top {
 	display: flex;
 	justify-content: space-between;
@@ -140,7 +140,7 @@ body {
 	background-color: #efefef;
 	height: 80px;
 }
-
+	// =====Стиль для ссылки наверх=====
 #to_top {
 	position: fixed;
 	left: 0;
