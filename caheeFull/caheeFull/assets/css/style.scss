@@ -49,6 +49,12 @@ body {
 	margin: 0 auto;
 }
 
+.container-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
 .header-flex {
 	display: flex;
 	flex-wrap: wrap;
@@ -67,12 +73,6 @@ body {
 	transition: all .2s ease;
 }
 
-.container-flex {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
-
 .fixed {
 	height: 60px;
 	box-shadow: 0 0 3px #999;
@@ -82,7 +82,7 @@ body {
 #mobile_menu_block {
 	position: fixed;
 	top: 0;
-	left: -100%;
+	left: -110%;
 	width: 100%;
 	height: 100%;
 	max-width: 400px;
@@ -308,6 +308,7 @@ body {
 
 .services-list__item {
 	display: flex;
+	align-items: center;
 	position: relative;
 	width: 100%;
 	min-height: 100px;
