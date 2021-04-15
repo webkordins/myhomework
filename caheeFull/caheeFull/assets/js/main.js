@@ -7,10 +7,17 @@ $(function(){
 			$("header").removeClass("fixed");
 		}
 	});
-	$(function(){
-		$('.hamburger, #menu_shadow').click(function(){
-			$(".hamburger").toggleClass("is-active");
-			$("body").toggleClass("open");
-		});
+	$('.hamburger, #menu_shadow').click(function(){
+		$(".hamburger").toggleClass("is-active");
+		$("body").toggleClass("open");
+	});
+	$('.mobile_menu a').click(function(){
+		$(".hamburger").removeClass("is-active");
+		$("body").removeClass("open");
+	});
+	$('.mobile_menu a, .main_menu a').click(function(e){
+		e.preventDefault();
+		let top = $($(this).attr("href")).offset().top;
+		$("html, body").animate({scrollTop:top}, 1000);
 	});
 });

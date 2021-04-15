@@ -112,6 +112,8 @@ body {
 }
 
 .mobile_menu {
+	height: calc(100vh - 80px);
+	overflow-y: scroll;
 	li {
 		border-bottom: 1px solid darkblue;
 		a {
@@ -136,7 +138,7 @@ body {
 	justify-content: space-between;
 	padding: 10px;
 	background-color: #efefef;
-	
+	height: 80px;
 }
 
 .hamburger {
