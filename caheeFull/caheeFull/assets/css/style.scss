@@ -141,6 +141,20 @@ body {
 	height: 80px;
 }
 
+#to_top {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 150px;
+	height: 100%;
+	background-color: #8080ff70;
+	opacity: 0;
+	transition: all .2s ease;
+	&:hover {
+		opacity: 1;
+	}
+}
+
 .hamburger {
 	display: none;
 }

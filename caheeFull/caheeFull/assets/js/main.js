@@ -15,9 +15,9 @@ $(function(){
 		$(".hamburger").removeClass("is-active");
 		$("body").removeClass("open");
 	});
-	$('.mobile_menu a, .main_menu a').click(function(e){
+	$('.mobile_menu a, .menu__link').click(function(e){
 		e.preventDefault();
 		let top = $($(this).attr("href")).offset().top;
-		$("html, body").animate({scrollTop:top}, 1000);
+		$("html, body").animate({scrollTop:top}, 500);
 	});
 });
