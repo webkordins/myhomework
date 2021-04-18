@@ -12,56 +12,69 @@ body {
 	margin: 0 auto;
 }
 
-.promo {
-	padding: 280px 0 0;
-	background-color: #0074BE;
-	background: url(../images/promo/promo-bg.jpg) center center/cover no-repeat;
-	&__top {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	&__title {
-		font-size: 48px;
-		font-weight: 700;
-		text-transform: uppercase;
-		line-height: 0.54;
-		letter-spacing: 3px;
-		text-align: center;
-		color: #fff;
-		margin-bottom: 15px;
-	}
-	&__subtitle {
-		font-size: 22px;
-		line-height: 1.18;
-		letter-spacing: 6.82px;
-		text-align: center;
-		color: #fff;
-		margin-bottom: 50px;
-	}
-	&__search {
-		width: 500px;
-	}
-	&__scroll {
-		margin-bottom: 158px;
-	}
-}
-
-.form-flex {
-	display: flex;
-	max-width: 650px;
-	margin-bottom: 120px;
-}
-
-.btn-search {
-	width: 150px;
-}
-
-.main-menu {
+.container-flex {
 	display: flex;
 	justify-content: space-between;
-	background-color: #5375FD;
-	&__item {
-		display: inline-block;
+	align-items: center;
+}
+
+@import "promo";
+
+// =====Choose Us=====
+
+@import 'choose';
+.go__link {
+	position: relative;
+	background: rgb(71,107,254);
+	background: -moz-linear-gradient(45deg, rgba(71,107,254,1) 37%, rgba(83,117,253,1) 37%);
+	background: -webkit-linear-gradient(45deg, rgba(71,107,254,1) 37%, rgba(83,117,253,1) 37%);
+	background: linear-gradient(45deg, rgba(71,107,254,1) 37%, rgba(83,117,253,1) 37%);
+	line-height: 60px;
+	font-family: Aleo;
+	font-size: 16px;
+	letter-spacing: 1.2px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all .2s  ease;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -5px;
+		width: 100%;
+		height: 2px;
+		transform: scale(0);
+		background-color: #fff;
+		transition: all .3s ease;
+	}
+	&:hover {
+		background: rgb(83,117,253);
+		background: -moz-linear-gradient(45deg, rgba(83,117,253,1) 37%, rgba(71,107,254,1) 37%);
+		background: -webkit-linear-gradient(45deg, rgba(83,117,253,1) 37%, rgba(71,107,254,1) 37%);
+		background: linear-gradient(45deg, rgba(83,117,253,1) 37%, rgba(71,107,254,1) 37%);
+		&::before {
+			transform: scale(1);
+		}
+	}
+	&--explore {
+		padding: 20px 38px;
 	}
 }
+
+// =====Steps=====
+@import 'steps';
+
+// =====Hotel=====
+@import 'hotel';
+
+// =====Ocean=====
+
+@import 'ocean';
+
+// =====Review=====
+
+@import 'review';
+
+ // =====Footer=====
+
+@import "footer";

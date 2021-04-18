@@ -11,29 +11,35 @@
 <body>
 	<main class="main-page">
 		<header class="promo">
-			<div class="promo__top">
-				<h1 class="promo__title">
-					Bhromaon
-				</h1>
-				<div class="promo__subtitle">
-					Safe Travel Anywhere
+			<div class="promo-flex">
+				<div class="promo__top">
+					<h1 class="promo__title">
+						Bhromaon
+					</h1>
+					<div class="promo__subtitle">
+						Safe Travel Anywhere
+					</div>
+					<div class="promo__form-flex">
+						<form action="#" class="promo__form" method="GET" name="find">
+							<input type="search" name="search" class="promo__search" placeholder="Search Your Travel Destination">
+							<button type="submit" class="btn-search">Search 
+								<svg class="icon-search-btn">
+									<use xlink:href="assets/fonts/svg/sprite.svg#search-btn"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+					<span class="promo__scroll">Scroll Down</span>
 				</div>
-				<div class="form-flex">
-					<form action="#" class="promo__form" method="GET" name="find">
-						<input type="search" name="search" class="promo__search">
-						<button type="submit" class="btn-search">Search</button>
-					</form>
-				</div>
-				<span class="promo__scroll">Scroll Down</span>
 			</div>
 
 			<div class="header">
-				<div class="container nav-flex">
+				<div class="container container-flex">
 					<div class="header__logo">
-						<span><a href="#" class="logo-link">Bhromaon</a></span>
+						<a href="#" class="header__logo-link">Bhromaon</a>
 					</div>
 					<nav class="header__menu">
-						<ul class="menu__list">
+						<ul class="menu__list menu">
 							<li class="menu__item">
 								<a href="#" class="menu__link">Who We Are</a>
 							</li>
@@ -60,11 +66,11 @@
 							Why Choose Us
 						</h2>
 						<div class="choose__descr">
-							Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
-							Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
+							<p>Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
+							<p>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
 						</div>
 						<div class="go">
-							<a href="#" class="go__link">Explore Places</a>
+							<a href="#" class="go__link go__link--explore">Explore Places</a>
 						</div>
 					</div>
 					<div class="choose__pic pic">
@@ -80,30 +86,36 @@
 		</section>
 
 		<div class="steps">
-			<div class="container">
+			<div class="container container-flex">
 				<ul class="steps__list">
-					<li class="steps__item">
-						<svg>
-
-						</svg>
-						<div class="steps__title title">
-							Search Places
+					<li class="steps__item item">
+						<div class="item-wrap">
+							<svg class="icon-search">
+								<use xlink:href="assets/fonts/svg/sprite.svg#search"></use>
+							</svg>
+							<div class="steps__title title">
+								Search Places
+							</div>
 						</div>
 					</li>
-					<li class="steps__item">
-						<svg>
-
-						</svg>
-						<div class="steps__title title">
-							Select Places
+					<li class="steps__item item">
+						<div class="item-wrap">
+							<svg class="icon-check">
+								<use xlink:href="assets/fonts/svg/sprite.svg#check"></use>
+							</svg>
+							<div class="steps__title title">
+								Select Places
+							</div>
 						</div>
 					</li>
-					<li class="steps__item">
-						<svg>
-
-						</svg>
-						<div class="steps__title title">
-							Book & Enjoy
+					<li class="steps__item item">
+						<div class="item-wrap">
+							<svg class="icon-hand">
+								<use xlink:href="assets/fonts/svg/sprite.svg#hand"></use>
+							</svg>
+							<div class="steps__title title">
+								Book & Enjoy
+							</div>
 						</div>
 					</li>
 				</ul>
@@ -112,34 +124,42 @@
 
 		<section class="hotel">
 			<div class="container">
-				<div class="hotel__info">
-					<h4 class="hotel__subtitle">
-						Spain 
-					</h4>
-					<h3 class="hotel__title">
-						Grand Spain Madrid
-					</h3>
-					<div class="hotel__descr">
-						But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system
+				<div class="inner">
+					<div class="hotel__info">
+						<h4 class="hotel__subtitle">
+							Spain
+						</h4>
+						<h3 class="hotel__title">
+							Grand Spain Madrid
+						</h3>
+						<div class="hotel__descr">
+							But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system
+						</div>
+						<div class="go">
+							<a href="#" class="go__link go__link--book-hotel">Book Now</a>
+						</div>
 					</div>
-					<button type="button" class="btn btn-book">Book Now</button>
 				</div>
 			</div>
 		</section>
 
 		<section class="ocean">
 			<div class="container">
-				<div class="ocean__info">
-					<h4 class="ocean__subtitle">
-						Spain 
-					</h4>
-					<h3 class="ocean__title">
-						Grand Spain Madrid
-					</h3>
-					<div class="ocean__descr">
-						But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system
+				<div class="inner">
+					<div class="ocean__info">
+						<h4 class="ocean__subtitle">
+							Spain
+						</h4>
+						<h3 class="ocean__title">
+							Grand Spain Madrid
+						</h3>
+						<div class="ocean__descr">
+							But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system
+						</div>
+						<div class="go">
+							<a href="#" class="go__link go__link--book-hotel">Book Now</a>
+						</div>
 					</div>
-					<button type="button" class="btn btn-book">Book Now</button>
 				</div>
 			</div>
 		</section>
@@ -159,7 +179,7 @@
 								Sam Sumon
 							</div>
 							<div class="review__text">
-								But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system
+								<span class="icon-quote-left"></span>But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system
 							</div>
 						</div>
 					</div>
@@ -168,29 +188,36 @@
 		</section>
 
 		<footer class="footer">
-			<h3 class="footer__title">
-				Bhromaon
-			</h3>
-			<div class="footer__subtitle">
-				Safe Travel Anywhere
+			<div class="footer__inner">
+				<h3 class="footer__title">
+					Bhromaon
+				</h3>
+				<div class="footer__subtitle">
+					Safe Travel Anywhere
+				</div>
+				<ul class="footer__list">
+					<li class="social-item">
+						<a href="https://www.facebook.com/" target="_blank" rel="nofollow norefferer">
+							<span class="icon-facebook"></span>
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="https://twitter.com" target="_blank" rel="nofollow norefferer">
+							<span class="icon-twitter"></span></a>
+					</li>
+					<li class="social-item">
+						<a href="https://www.linkedin.com/" target="_blank" rel="nofollow norefferer">
+							<span class="icon-linkedin2"></span></a>
+					</li>
+					<li class="social-item">
+						<a href="https://www.youtube.com/" target="_blank" rel="nofollow norefferer">
+							<span class="icon-youtube"></span></a>
+					</li>
+					<li class="social-item">
+						<a href="https://www.pinterest.com/" target="_blank" rel="nofollow norefferer"><span class="icon-pinterest"></span></a>
+					</li>
+				</ul>
 			</div>
-			<ul class="footer__list">
-				<li class="social-item">
-					<a href="https://www.facebook.com/" target="_blank" id="facebook"></a>
-				</li>
-				<li class="social-item">
-					<a href="https://twitter.com" target="_blank" id="twitter"></a>
-				</li>
-				<li class="social-item">
-					<a href="https://www.linkedin.com/" target="_blank" id="linkedin"></a>
-				</li>
-				<li class="social-item">
-					<a href="https://www.youtube.com/" target="_blank" id="youtube"></a>
-				</li>
-				<li class="social-item">
-					<a href="https://www.pinterest.com/" target="_blank" id="pinterest"></a>
-				</li>
-			</ul>
 		</footer>
 	</main>
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
