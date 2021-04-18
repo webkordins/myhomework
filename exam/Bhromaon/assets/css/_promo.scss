@@ -1,6 +1,10 @@
 .promo-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .promo {
@@ -8,9 +12,16 @@
 	background-color: #0074BE;
 	background: url(../images/promo/promo-bg.jpg) left top/100% auto no-repeat;
 	&__top {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		width: 90%;
 		max-width: 650px;
 	}
@@ -33,12 +44,17 @@
 		margin-bottom: 47px;
 	}
 	&__form-flex {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 		width: 100%;
 		margin-bottom: 115px;
 	}
 	&__form {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		width: 100%;
 		border: 2px solid #fff;
@@ -76,14 +92,21 @@
 		top: 26px;
 		border-left: 1px solid #fff;
 		border-bottom: 1px solid #fff;
-		transform: rotate(315deg);
+		-webkit-transform: rotate(315deg);
+		    -ms-transform: rotate(315deg);
+		        transform: rotate(315deg);
 	}
 }
 
 .btn-search {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 0 8px 0 28px;
 	width: calc(100% - 76.92%);
 	background-color: #5375FD;
@@ -95,6 +118,8 @@
 	color: #fff;
 	cursor: pointer;
 	border: 2px solid transparent;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
 	transition: all .2s ease;
 	&:hover {
 		background-color: #fff;
@@ -143,11 +168,17 @@
 			height: 2px;
 			left: 0;
 			top: -5px;
-			transform: scale(0);
+			-webkit-transform: scale(0);
+			    -ms-transform: scale(0);
+			        transform: scale(0);
 			background-color: #fff;
+			-webkit-transition: all .3s ease;
+			-o-transition: all .3s ease;
 			transition: all .3s ease;
 		}:hover::before {
-			transform: scale(1);
+			-webkit-transform: scale(1);
+			    -ms-transform: scale(1);
+			        transform: scale(1);
 	}
 }
 
@@ -156,8 +187,12 @@
 }
 
 .main-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	background-color: #5375FD;
 	&__item {
 		display: inline-block;

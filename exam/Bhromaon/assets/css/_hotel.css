@@ -1,14 +1,17 @@
-.ocean {
-  background: url(../images/ocean/ocean-bg.jpg) left top/100% auto no-repeat;
+.inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.hotel {
+  background: url(../images/hotel/hotel-bg.jpg) left top/100% auto no-repeat;
   padding: 230px 0 100px;
 }
-.ocean .inner {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-.ocean__info {
+.hotel__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +25,7 @@
   width: calc(50% - 15px);
   background-color: rgba(35, 35, 35, 0.9);
 }
-.ocean__subtitle {
+.hotel__subtitle {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 1.5px;
@@ -30,7 +33,7 @@
   color: #e8e8e8;
   margin-bottom: 26px;
 }
-.ocean__title {
+.hotel__title {
   font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
@@ -40,11 +43,15 @@
   margin-bottom: 18px;
   letter-spacing: -0.5px;
 }
-.ocean__descr {
+.hotel__descr {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.63;
   text-align: left;
   color: #e8e8e8;
   margin-bottom: 42px;
+}
+
+.go__link--book-hotel {
+  padding: 20px 62px;
 }

@@ -1,16 +1,25 @@
 .inner {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .hotel {
 	background: url(../images/hotel/hotel-bg.jpg)left top/100% auto no-repeat;
 	padding: 230px 0 100px;
 	&__info {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		padding: 50px 30px 50px 30px;
 		width: calc(50% - 15px);
 		background-color:rgba(35, 35, 35, 0.9);

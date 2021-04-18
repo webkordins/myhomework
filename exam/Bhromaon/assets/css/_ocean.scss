@@ -2,12 +2,21 @@
 	background: url(../images/ocean/ocean-bg.jpg)left top/100% auto no-repeat;
 	padding: 230px 0 100px;
 	.inner {
-		flex-direction: row-reverse;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: row-reverse;
+		        flex-direction: row-reverse;
 	}
 	&__info {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		padding: 50px 30px 50px 30px;
 		width: calc(50% - 15px);
 		background-color:rgba(35, 35, 35, 0.9);
