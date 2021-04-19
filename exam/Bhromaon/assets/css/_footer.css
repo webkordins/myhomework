@@ -11,6 +11,9 @@
   margin-bottom: 7px;
   letter-spacing: 2.4px;
 }
+.footer__logo {
+  color: #fff;
+}
 .footer__inner {
   width: 170px;
   margin: 0 auto;
@@ -39,4 +42,10 @@
 }
 .social-item span:hover {
   color: #5375FD;
+}
+
+@media screen and (max-width: 730px) {
+  .footer {
+    padding: 50px 0;
+  }
 }

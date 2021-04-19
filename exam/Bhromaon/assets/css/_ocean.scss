@@ -1,5 +1,5 @@
 .ocean {
-	background: url(../images/ocean/ocean-bg.jpg)left top/100% auto no-repeat;
+	background: url(../images/ocean/ocean-bg.jpg)left top/cover no-repeat;
 	padding: 230px 0 100px;
 	.inner {
 		-webkit-box-orient: horizontal;
@@ -46,5 +46,14 @@
 		text-align: left;
 		color: #e8e8e8;
 		margin-bottom: 42px;
+	}
+}
+
+@media screen and (max-width:690px) {
+	.ocean__info {
+		width: 100%;
+	}
+	.ocean {
+		padding: 100px 0;
 	}
 }

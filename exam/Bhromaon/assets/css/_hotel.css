@@ -8,7 +8,7 @@
 }
 
 .hotel {
-  background: url(../images/hotel/hotel-bg.jpg) left top/100% auto no-repeat;
+  background: url(../images/hotel/hotel-bg.jpg) left top/cover no-repeat;
   padding: 230px 0 100px;
 }
 .hotel__info {
@@ -54,4 +54,14 @@
 
 .go__link--book-hotel {
   padding: 20px 62px;
+}
+
+@media screen and (max-width: 690px) {
+  .hotel__info {
+    width: 100%;
+  }
+
+  .hotel {
+    padding: 100px 0;
+  }
 }
