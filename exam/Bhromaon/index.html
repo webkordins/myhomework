@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bhromaon</title>
+	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" href="assets/css/font.css">
 	<link rel="stylesheet" href="assets/css/hamburger.min.css">
 	<link rel="stylesheet" href="assets/css/style.min.css">
@@ -25,7 +26,7 @@
 				<div class="promo__form-flex">
 					<form action="#" class="promo__form" method="GET" name="find">
 						<input type="search" name="search" class="promo__search" placeholder="Search Your Travel Destination">
-						<button type="submit" class="btn-search only-icon">Search
+						<button type="submit" class="btn-search">Search
 							<svg class="icon-search-btn">
 								<use xlink:href="assets/fonts/svg/sprite.svg#search-btn"></use>
 							</svg>
@@ -57,6 +58,11 @@
 						</li>
 					</ul>
 				</nav>
+				<div class="hamburger_btn">
+					<a href="#">
+						<span></span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -78,12 +84,12 @@
 						<a href="#" class="go__link go__link--explore">Explore Places</a>
 					</div>
 				</div>
-				<div class="choose__pic pic">
+				<div class="choose__pic">
 					<div class="pic__box">
 						<img src="assets/images/choose/lake.jpg" alt="lake" class="pic-item">
 					</div>
 					<div class="pic__box">
-						<img src="assets/images/choose/mount.jpg" alt="mount" class="pic-item">
+						<img src="assets/images/choose/mount.jpg" alt="mountain" class="pic-item">
 					</div>
 				</div>
 			</div>
@@ -98,7 +104,7 @@
 						<svg class="icon-search icon">
 							<use xlink:href="assets/fonts/svg/sprite.svg#search"></use>
 						</svg>
-						<div class="steps__title title">
+						<div class="steps__title">
 							Search Places
 						</div>
 					</div>
@@ -108,7 +114,7 @@
 						<svg class="icon-check icon">
 							<use xlink:href="assets/fonts/svg/sprite.svg#check"></use>
 						</svg>
-						<div class="steps__title title">
+						<div class="steps__title">
 							Select Places
 						</div>
 					</div>
@@ -118,7 +124,7 @@
 						<svg class="icon-hand icon">
 							<use xlink:href="assets/fonts/svg/sprite.svg#hand"></use>
 						</svg>
-						<div class="steps__title title">
+						<div class="steps__title">
 							Book & Enjoy
 						</div>
 					</div>
@@ -176,22 +182,20 @@
 			<h2 class="review__title">
 				What Our Tourist Say
 			</h2>
-			<div class="review-flex">
-				<div class="review__box">
-					<div class="review__pic">
-						<img src="assets/images/tourist/man.jpg" alt="man" class="review__image">
+			<div class="review__box">
+				<div class="review__pic">
+					<img src="assets/images/tourist/man.jpg" alt="man" class="review__image">
+				</div>
+				<div class="review__sample">
+					<div class="review__name">
+						Sam Sumon
 					</div>
-					<div class="review__sample">
-						<div class="review__name">
-							Sam Sumon
-						</div>
-						<div class="review__text">
-							<span class="icon-quote-left"></span>But I must explain to you how all this mistaken idea of
-							account to denouncinpleasure and praising pain But I must explain to you how all this mistaken idea
-							of account to nai denouncing pleasure and praising pain was account born and I account will give
-							you a complete account of the system was account born and I account will give you a nai the
-							complete account of the system
-						</div>
+					<div class="review__text">
+						<span class="icon-quote-left"></span>But I must explain to you how all this mistaken idea of
+						account to denouncinpleasure and praising pain But I must explain to you how all this mistaken idea
+						of account to nai denouncing pleasure and praising pain was account born and I account will give
+						you a complete account of the system was account born and I account will give you a nai the
+						complete account of the system
 					</div>
 				</div>
 			</div>
@@ -232,9 +236,7 @@
 		</div>
 	</footer>
 
-
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
-
 </html>
