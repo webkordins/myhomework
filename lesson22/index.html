@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 22 homework</title>
+	<style>
+		body {
+			width: 100%;
+			margin-left: 20px;	
+		}
+		h1 {
+			width: 33%;
+			padding-left: 20px;
+			background-color: #5375FD;
+			color: #fff;
+			border-radius: 5px;
+		}
+		h2 {
+			position: relative;
+			padding-left: 20px;
+			color: maroon;
+		}
+		h2::before {
+			content: '';
+			position: absolute;
+			width: 2px;
+			top: 47px;
+			height: 300px;
+			background-color: #ccc;
+		}
+		ul {
+			width: 150px;
+			list-style: none;
+		}
+		li {
+			margin-bottom: 10px;
+			transition: all .2s ease;
+		}
+		li:hover {
+			transform: translateY(-2px);
+		}
+		button {
+			width: 100%;
+		}
+		footer {
+			padding-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header> 
+		<h1>
+			Домашнее задание по основам JavaScript
+		</h1>
+		<h2>
+			Нажмите на любую кнопку и оцените мощь JavaScript!
+		</h2>
+	</header>
+	<main>
+		<ul>
+			<li><button type="button" onclick="hi()">Приветствие</button></li>
+			<li><button type="button" onclick="age()">Возраст</button></li>
+			<li><button type="button" onclick="squarePerimetr()">Периметр</button></li>
+			<li><button type="button" onclick="circleArea()">Площадь круга</button></li>
+			<li><button type="button" onclick="speed()">Скорость</button></li>
+			<li><button type="button" onclick="convToEvro()">Конвертер валюты</button></li>
+			<li><button type="button" onclick="filesNumber()">Количество файлов</button></li>
+			<li><button type="button" onclick="chocolate()">Шоколадки</button></li>
+			<li><button type="button" onclick="backwards()">Число наоборот</button></li>
+			<li><button type="button" onclick="getPercent()">Проценты вклада</button></li>
+		</ul>
+	</main>
+
+	<footer>
+		&copy;2021 All rights reserved
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
