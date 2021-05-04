@@ -82,7 +82,7 @@ function palindrome() {
 		alert('Ваше число не является палиндромом');
 	}
 }
-// задача 6 не решена
+// задача 6
 function conv() {
 	let mySum = parseFloat(prompt('Введите сумму в долларах')),
 		myVal = prompt("Введите код желаемой валюты: \nEUR\nUAH\nAZN");
